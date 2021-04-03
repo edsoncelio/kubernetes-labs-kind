@@ -62,5 +62,6 @@ To see all available commands, use `make help`
 * https://kind.sigs.k8s.io/docs/user/quick-start/
 * https://kind.sigs.k8s.io/docs/user/loadbalancer/
 * https://kind.sigs.k8s.io/docs/user/ingress/
+* https://kubernetes.io/docs/concepts/services-networking/service/
 
  ¹: Untested at this moment because doesn't work with Docker for Mac :(
