@@ -34,6 +34,7 @@ To access the app go to the browser and access `http://localhost/`
 
 ## TODO
  - [ ] Add the option to install kind and requirements using make
+ - [ ] Add the option to create a cluster with HA (now it's just a control plane action as a worker)
  
 ## Getting help
 
