@@ -22,14 +22,6 @@ help:
 	{ lastLine = $$0 }' $(MAKEFILE_LIST)
 	printf "\n"
 
-## Check and install kind and dependencies
-setup-kind:
-	echo "Checking dependencies..."
-	which kubectl
-	which kind
-	which go
-
-
 # Cluster configs
 
 ## Create and configure kind cluster with MetalLB
