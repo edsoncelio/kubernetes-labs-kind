@@ -23,7 +23,7 @@ To setup the cluster:
 To deploy the app:   
 `make deploy-app-lb`
 
-To access the app go to the browser and access `http:/localhost`
+To access the app go to the browser and access `http://localhost`
 
 
 
