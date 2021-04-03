@@ -11,7 +11,7 @@ The app used to deploy is https://github.com/paulbouwer/hello-kubernetes.
 * docker 20+
 * kind (to install use https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
 
-## How to use - with Metal LB
+## How to use - with Metal LB ¹
 
 [MetalLB](https://metallb.universe.tf) is a load-balancer implementation for bare metal Kubernetes clusters.
 
@@ -29,6 +29,14 @@ To deploy the app:
 To setup the cluster:   
 `make setup-cluster-ingress`
 
+Before deploy the app, it's necessary wait while the ingress is ready:
+```
+kubectl wait --namespace ingress-nginx \
+  --for=condition=ready pod \
+  --selector=app.kubernetes.io/component=controller \
+  --timeout=90s
+```
+
 To deploy the app:   
 `make deploy-app-lb`
 
@@ -36,8 +44,10 @@ To access the app go to the browser and access `http://localhost/`
 
 ## TODO
  - [ ] Add the option to install kind and requirements using make
- - [ ] Add the option to create a cluster with HA (now it's just a control plane action as a worker)
+ - [ ] Add the option to create a cluster with HA (now it's just a control plane acting as a worker)
  
+ ## Interacting with the cluster
+ A complete list with `kubectl` commands that you can use to interact with the cluster, you can see https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ## Getting help
 
 To see all available commands, use `make help`
@@ -46,3 +56,5 @@ To see all available commands, use `make help`
 * https://kind.sigs.k8s.io/docs/user/quick-start/
 * https://kind.sigs.k8s.io/docs/user/loadbalancer/
 * https://kind.sigs.k8s.io/docs/user/ingress/
+
+ ¹: Untested at this moment because doesn't work with Docker for Mac :(
