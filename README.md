@@ -1,4 +1,4 @@
-# Kubernetes practice with Kind
+# Kubernetes labs with Kind
 
 > Work in progress
 
@@ -41,3 +41,8 @@ To access the app go to the browser and access `http://localhost/`
 ## Getting help
 
 To see all available commands, use `make help`
+
+## References
+* https://kind.sigs.k8s.io/docs/user/quick-start/
+* https://kind.sigs.k8s.io/docs/user/loadbalancer/
+* https://kind.sigs.k8s.io/docs/user/ingress/

@@ -45,12 +45,18 @@ delete-cluster:
 
 ## Deploy sample app Hello Kubernetes using Metal LB
 deploy-app-lb:
-	kubectl apply -f ./manifests/hello-kubernetes-lb/
+	kubectl apply -f ./app/hello-kubernetes-ingress/namespace.yaml
+	kubectl apply -f ./app/hello-kubernetes-ingress/deployment.yaml
+	kubectl apply -f ./app/hello-kubernetes-ingress/service.yaml
 
 ## Deploy sample app Hello Kubernetes using Nginx Ingress
 deploy-app-ingress:
-	kubectl create namespace hello-kubernetes
-	kubectl apply -f ./manifests/hello-kubernetes-ingress/
+	kubectl apply -f ./app/hello-kubernetes-ingress/namespace.yaml
+	kubectl apply -f ./app/hello-kubernetes-ingress/configmap.yaml
+	kubectl apply -f ./app/hello-kubernetes-ingress/deployment.yaml
+	kubectl apply -f ./app/hello-kubernetes-ingress/service.yaml
+	kubectl apply -f ./app/hello-kubernetes-ingress/ingress.yaml
+
 
 ## Show all the resources created to the app
 check-app:
