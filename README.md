@@ -15,6 +15,8 @@ The app used to deploy is https://github.com/paulbouwer/hello-kubernetes.
 
 [MetalLB](https://metallb.universe.tf) is a load-balancer implementation for bare metal Kubernetes clusters.
 
+> Before setup the cluster, it's necessary change the IP range at `config/metallb-configmap.yaml`, to do that follow this guide: https://kind.sigs.k8s.io/docs/user/loadbalancer/#setup-address-pool-used-by-loadbalancers
+
 To setup the cluster:   
 `make setup-cluster-metalb`
 
