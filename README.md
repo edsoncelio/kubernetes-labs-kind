@@ -9,6 +9,8 @@ The app used to deploy is https://github.com/paulbouwer/hello-kubernetes.
 
 ## How to use - with Metal LB
 
+[MetalLB](https://metallb.universe.tf) is a load-balancer implementation for bare metal Kubernetes clusters.
+
 To setup the cluster:   
 `make setup-cluster-metalb`
 
@@ -16,6 +18,7 @@ To deploy the app:
 `make deploy-app-lb`
 
 ## How to use - with Nginx Ingress
+[Ingress Nginx](https://kubernetes.github.io/ingress-nginx/)
 
 To setup the cluster:   
 `make setup-cluster-ingress`
