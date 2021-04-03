@@ -32,6 +32,9 @@ To deploy the app:
 
 To access the app go to the browser and access `http://localhost/`
 
+## TODO
+ - [ ] Add the option to install kind and requirements using make
+ 
 ## Getting help
 
 To see all available commands, use `make help`
