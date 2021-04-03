@@ -1,5 +1,8 @@
 # Kubernetes practice with Kind
-Labs to setup and run a cluster and and app in kubernetes using kind with Metal LB or Nginx Ingress.   
+
+> Work in progress
+
+kind is a tool for running local Kubernetes clusters using Docker container “nodes”.   
 The app used to deploy is https://github.com/paulbouwer/hello-kubernetes.
 
 ## Requirements
