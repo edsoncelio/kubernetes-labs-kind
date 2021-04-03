@@ -25,6 +25,6 @@ To deploy the app:
 
 To access the app go to the browser and access `http://localhost`
 
-
+## Getting help
 
 To see all the available commands, use `make help`
