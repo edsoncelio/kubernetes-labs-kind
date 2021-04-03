@@ -1,4 +1,4 @@
-# Kubernetes labs with Kind
+# 🐳 Kubernetes labs with Kind
 
 > Work in progress
 
@@ -42,16 +42,22 @@ To deploy the app:
 
 To access the app go to the browser and access `http://localhost/`
 
-## TODO
- - [ ] Add the option to install kind and requirements using make
- - [ ] Add the option to create a cluster with HA (now it's just a control plane acting as a worker)
- 
  ## Interacting with the cluster
  A complete list with `kubectl` commands that you can use to interact with the cluster, you can see https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+## 🔥 Destroying the clusters
+To destroy the cluster:
+`make delete-cluster`
+
 ## Getting help
 
 To see all available commands, use `make help`
 
+## TODO
+ - [ ] Add the option to install kind and requirements using make
+ - [ ] Add the option to create a cluster with HA (now it's just a control plane acting as a worker)
+ 
+ 
 ## References
 * https://kind.sigs.k8s.io/docs/user/quick-start/
 * https://kind.sigs.k8s.io/docs/user/loadbalancer/
