@@ -12,7 +12,7 @@ The app used to deploy is https://github.com/paulbouwer/hello-kubernetes.
 To setup the cluster:   
 `make setup-cluster-metalb`
 
-To deploy the app using metal load balance:   
+To deploy the app:   
 `make deploy-app-lb`
 
 ## How to use - with Nginx Ingress
@@ -24,6 +24,7 @@ To deploy the app:
 `make deploy-app-lb`
 
 To access the app go to the browser and access `http:/localhost`
+
 
 
 To see all the available commands, use `make help`
