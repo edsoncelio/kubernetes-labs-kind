@@ -9,6 +9,7 @@ The app used to deploy is https://github.com/paulbouwer/hello-kubernetes.
 * golang 1.15+
 * kubectl (to install check https://kubernetes.io/docs/tasks/tools/#kubectl)
 * docker 20+
+* kind (to install use https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
 
 ## How to use - with Metal LB
 
