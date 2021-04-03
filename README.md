@@ -2,7 +2,7 @@
 
 > Work in progress
 
-kind is a tool for running local Kubernetes clusters using Docker container “nodes”.   
+[kind](https://kind.sigs.k8s.io) is a tool for running local Kubernetes clusters using Docker container “nodes”.   
 The app used to deploy is https://github.com/paulbouwer/hello-kubernetes.
 
 ## Requirements
